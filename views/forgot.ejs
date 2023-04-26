@@ -1,0 +1,8 @@
+<h2>Forgot Password</h2>
+<%- include ('./partials/messages') %>
+<form action="/users/forgot" method="post">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
+    <button type="submit">Soumettre</button>
+</form>
+<a href="/users/login">Retour à la connexion</a>

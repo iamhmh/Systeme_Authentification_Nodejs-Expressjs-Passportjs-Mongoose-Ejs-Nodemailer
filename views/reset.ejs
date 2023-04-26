@@ -1,0 +1,12 @@
+<h1>Réinitialiser le mot de passe</h1>
+<%- include ('./partials/messages') %>
+<form action="/users/reset/<%= token %>" method="post">
+    <label for="password">Nouveau mot de passe:</label>
+    <input type="password" name="password" id="password" required />
+
+    <label for="confirmPassword">Confirmez le nouveau mot de passe:</label>
+    <input type="password" name="confirmPassword" id="confirmPassword" required />
+
+    <button type="submit">Modifier le mot de passe</button>
+  </form>
+<a href="/users/login">Retour à la connexion</a>
